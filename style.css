@@ -34,7 +34,7 @@ body {
     padding: 28px 16px;
 }
 
-.bg-orb {
+.oz-krog {
     position: fixed;
     border-radius: 999px;
     filter: blur(6px);
@@ -44,7 +44,7 @@ body {
     animation: drift 12s ease-in-out infinite;
 }
 
-.orb-one {
+.krog-ena {
     width: 320px;
     height: 320px;
     background: radial-gradient(circle, rgba(80, 216, 157, 0.6), transparent 66%);
@@ -52,7 +52,7 @@ body {
     left: -90px;
 }
 
-.orb-two {
+.krog-dva {
     width: 360px;
     height: 360px;
     background: radial-gradient(circle, rgba(49, 145, 232, 0.45), transparent 70%);
@@ -61,7 +61,7 @@ body {
     animation-delay: 2s;
 }
 
-.app-shell {
+.app-okvir {
     position: relative;
     z-index: 1;
 }
@@ -80,7 +80,7 @@ body {
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
 }
 
-.subtitle {
+.podnapis {
     margin-top: 6px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ body {
     gap: 16px;
 }
 
-.cas-box {
+.cas-okvir {
     background: linear-gradient(160deg, rgba(9, 41, 33, 0.88), rgba(12, 28, 38, 0.78));
     border: 1px solid rgba(80, 216, 157, 0.25);
     border-radius: 18px;
@@ -115,14 +115,14 @@ body {
     text-align: center;
 }
 
-.cas-box p {
+.cas-okvir p {
     font-weight: 700;
     letter-spacing: 0.08em;
     font-size: 0.75rem;
     color: var(--text-muted);
 }
 
-.stat-box {
+.stat-okvir {
     background: linear-gradient(160deg, rgba(9, 41, 33, 0.72), rgba(12, 28, 38, 0.65));
     border: 1px solid rgba(80, 216, 157, 0.2);
     border-radius: 14px;
@@ -131,7 +131,7 @@ body {
     gap: 8px;
 }
 
-.stat-row {
+.stat-vrst {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -140,7 +140,7 @@ body {
     letter-spacing: 0.04em;
 }
 
-.stat-row strong {
+.stat-vrst strong {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.45rem;
     letter-spacing: 0.04em;
@@ -155,7 +155,7 @@ body {
     text-shadow: 0 4px 14px rgba(80, 216, 157, 0.35);
 }
 
-.time-chip {
+.cas-cip {
     display: inline-block;
     margin-top: 10px;
     padding: 6px 10px;
@@ -166,7 +166,7 @@ body {
     color: #dfffee;
 }
 
-.gumbi {
+.gumbki {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -187,7 +187,7 @@ button {
     gap: 8px;
 }
 
-.gumbi button {
+.gumbki button {
     padding: 13px 16px;
 }
 
@@ -232,7 +232,7 @@ canvas {
     display: block;
 }
 
-.footer {
+.noga {
     margin-top: 14px;
     width: 100%;
     display: flex;
@@ -361,7 +361,7 @@ canvas {
         min-height: auto;
     }
 
-    .footer {
+    .noga {
         justify-content: center;
     }
 }
@@ -376,7 +376,7 @@ canvas {
         border-radius: 18px;
     }
 
-    .cas-box {
+    .cas-okvir {
         padding: 20px 14px;
     }
 
@@ -384,10 +384,8 @@ canvas {
         font-size: 3.3rem;
     }
 
-    .subtitle {
+    .podnapis {
         font-size: 0.64rem;
         letter-spacing: 0.11em;
     }
 }
-
-
