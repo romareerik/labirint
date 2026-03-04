@@ -5,6 +5,7 @@ const solution2 = "122,2 122,10 138,10 138,26 170,26 170,10 234,10 234,42 218,42
 
 const solution3 = "122,2 122,10 154,10 154,26 186,26 186,58 234,58 234,90 202,90 202,74 186,74 186,106 170,106 170,122 154,122 154,106 138,106 138,122 122,122 122,106 106,106 106,122 90,122 90,138 106,138 106,154 122,154 122,138 154,138 154,170 170,170 170,138 186,138 186,170 202,170 202,186 186,186 186,202 202,202 202,234 186,234 186,218 170,218 170,202 154,202 154,186 138,186 138,202 122,202 122,242";
 
+// Niz koordinat razbije v uporabne tocke [x, y].
 function parsePath(pString) {
     return pString.split(" ").map(p => p.split(",").map(Number));
 }
@@ -60,6 +61,7 @@ document.getElementById("nastavitve").addEventListener("click", () => {
 });
 
 
+// Narise prvi labirint na canvas.
 function labirint(ctx) {
     ctx.beginPath();
     ctx.lineCap="square";
@@ -286,10 +288,11 @@ function labirint(ctx) {
     ctx.moveTo(242,2);
     ctx.lineTo(242,242);
     ctx.fill();
-    ctx.strokeStyle='green';
+    ctx.strokeStyle = "#008000";
     ctx.stroke();
 }
 
+// Narise drugi labirint na canvas.
 function labirint2(ctx) {
     ctx.beginPath();
     ctx.lineCap="square";
@@ -529,10 +532,11 @@ function labirint2(ctx) {
     ctx.moveTo(242,1);
     ctx.lineTo(242,242);
     ctx.fill();
-    ctx.strokeStyle='green';
+    ctx.strokeStyle = "#008000";
     ctx.stroke();
 }
 
+// Narise tretji labirint na canvas.
 function labirint3(ctx) {
     ctx.beginPath();
     ctx.lineWidth=debelinaZida;
@@ -758,7 +762,7 @@ function labirint3(ctx) {
     ctx.moveTo(242,1);
     ctx.lineTo(242,242);
     ctx.fill();
-    ctx.strokeStyle='green';
+    ctx.strokeStyle = "#008000";
     ctx.stroke();
 }
     
