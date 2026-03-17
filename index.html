@@ -24,23 +24,29 @@
         <div id="ui">
             <div id="left">
                 <div class="cas-okvir">
-                    <p>PREOSTALI ČAS</p>
+                    <p>ČAS</p>
                     <h1 id="cas">00:00</h1>
                 </div>
 
                 <div class="stat-okvir">
                     <div class="stat-vrst">
-                        <span>KOVANCI</span>
-                        <strong id="score">0/0</strong>
+                        <span>NAJBOLJŠI WASD</span>
+                        <div class="stat-vrednost">
+                            <span id="best-medal-start" class="best-medal">--</span>
+                            <strong id="best-time-start">--:--</strong>
+                        </div>
                     </div>
                     <div class="stat-vrst">
-                        <span>NAJBOLJŠI ČAS</span>
-                        <strong id="best-time">--:--</strong>
+                        <span>NAJBOLJŠI RIŠI</span>
+                        <div class="stat-vrednost">
+                            <span id="best-medal-draw" class="best-medal">--</span>
+                            <strong id="best-time-draw">--:--</strong>
+                        </div>
                     </div>
                 </div>
 
                 <div class="gumbki">
-                    <button id="start"><i class="fa-solid fa-play"></i> ZAČNI</button>
+                    <button id="start"><i class="fa-solid fa-play"></i> WASD</button>
                     <button id="draw"><i class="fa-solid fa-pen"></i> RIŠI</button>
                     <button id="auto"><i class="fa-solid fa-wand-magic-sparkles"></i> REŠITEV</button>
                 </div>
@@ -55,6 +61,37 @@
             <div id="game-area">
                 <canvas id="canvas" width="485" height="485"></canvas>
             </div>
+
+            <aside id="right">
+                <div class="medalje-okvir medalje-okvir-desno">
+                    <p class="medalje-naslov">WASD</p>
+                    <div class="medalja-vrst zlata">
+                        <span><i class="fa-solid fa-medal"></i> ZLATA</span>
+                        <strong>00:50</strong>
+                    </div>
+                    <div class="medalja-vrst srebrna">
+                        <span><i class="fa-solid fa-medal"></i> SREBRNA</span>
+                        <strong>01:00</strong>
+                    </div>
+                    <div class="medalja-vrst bronasta">
+                        <span><i class="fa-solid fa-medal"></i> BRONASTA</span>
+                        <strong>01:10</strong>
+                    </div>
+                    <p class="medalje-naslov">RIŠI</p>
+                    <div class="medalja-vrst zlata">
+                        <span><i class="fa-solid fa-medal"></i> ZLATA</span>
+                        <strong>00:20</strong>
+                    </div>
+                    <div class="medalja-vrst srebrna">
+                        <span><i class="fa-solid fa-medal"></i> SREBRNA</span>
+                        <strong>00:30</strong>
+                    </div>
+                    <div class="medalja-vrst bronasta">
+                        <span><i class="fa-solid fa-medal"></i> BRONASTA</span>
+                        <strong>00:40</strong>
+                    </div>
+                </div>
+            </aside>
         </div>
 
     </main>

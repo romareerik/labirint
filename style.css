@@ -101,7 +101,7 @@ body {
 }
 
 #left {
-    width: 240px;
+    width: 290px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -126,18 +126,24 @@ body {
     background: linear-gradient(160deg, rgba(9, 41, 33, 0.72), rgba(12, 28, 38, 0.65));
     border: 1px solid rgba(80, 216, 157, 0.2);
     border-radius: 14px;
-    padding: 10px 12px;
+    padding: 12px 14px;
     display: grid;
-    gap: 8px;
+    gap: 10px;
 }
 
 .stat-vrst {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 14px;
     font-size: 0.75rem;
     color: var(--text-muted);
     letter-spacing: 0.04em;
+}
+
+.stat-vrst > span {
+    flex: 1;
+    min-width: 0;
 }
 
 .stat-vrst strong {
@@ -145,6 +151,94 @@ body {
     font-size: 1.45rem;
     letter-spacing: 0.04em;
     color: var(--text-main);
+}
+
+.stat-vrednost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.best-medal {
+    min-width: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-muted);
+}
+
+.medalje-okvir {
+    background: linear-gradient(160deg, rgba(9, 41, 33, 0.72), rgba(12, 28, 38, 0.65));
+    border: 1px solid rgba(80, 216, 157, 0.2);
+    border-radius: 14px;
+    padding: 12px;
+    display: grid;
+    gap: 8px;
+}
+
+.medalje-okvir-desno {
+    min-width: 215px;
+}
+
+.medalje-naslov {
+    margin-top: 2px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+}
+
+.medalje-naslov:not(:first-child) {
+    margin-top: 8px;
+}
+
+.medalja-vrst {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 0.77rem;
+    letter-spacing: 0.04em;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.medalja-vrst span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+}
+
+.medalja-vrst strong {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+}
+
+.medalja-vrst.zlata {
+    color: #ffe181;
+    background: linear-gradient(135deg, rgba(255, 213, 74, 0.18), rgba(255, 213, 74, 0.06));
+}
+
+.medalja-vrst.srebrna {
+    color: #dbe4ee;
+    background: linear-gradient(135deg, rgba(212, 221, 231, 0.16), rgba(212, 221, 231, 0.05));
+}
+
+.medalja-vrst.bronasta {
+    color: #ebb183;
+    background: linear-gradient(135deg, rgba(214, 144, 82, 0.2), rgba(214, 144, 82, 0.06));
 }
 
 #cas {
@@ -217,6 +311,12 @@ button:active {
     place-items: center;
     min-height: 530px;
     padding: 0;
+}
+
+#right {
+    width: 215px;
+    display: flex;
+    align-items: stretch;
 }
 
 canvas {
@@ -359,6 +459,16 @@ canvas {
     #game-area {
         width: 100%;
         min-height: auto;
+    }
+
+    #right {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .medalje-okvir-desno {
+        width: 100%;
+        min-width: 0;
     }
 
     .noga {
